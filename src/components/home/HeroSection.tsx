@@ -75,7 +75,6 @@ export function HeroSection() {
               onClick={() => setBookingModalOpen(true)}
               className="group relative flex w-full sm:w-auto items-center justify-center gap-3 rounded-full gold-gradient-bg px-8 py-4 text-base font-bold text-brand-blue-deep shadow-gold transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-2xl"
             >
-              <Sparkles className="h-5 w-5 text-brand-blue-deep transition-transform group-hover:rotate-12" />
               <span>Book a Service</span>
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </button>
@@ -87,27 +86,6 @@ export function HeroSection() {
               <span>See Our Work</span>
               <ArrowRight className="h-4 w-4 text-brand-gold transition-transform group-hover:translate-x-1" />
             </Link>
-          </motion.div>
-
-          {/* Trust Highlights Strip */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.6 }}
-            className="mt-14 flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-xs sm:text-sm text-brand-cream/80"
-          >
-            <div className="flex items-center gap-2">
-              <CheckCircle className="h-4 w-4 text-brand-gold" />
-              <span>500+ Luxury Events Delivered</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle className="h-4 w-4 text-brand-gold" />
-              <span>Direct A-List Artist Network</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle className="h-4 w-4 text-brand-gold" />
-              <span>Nationwide 36-State Reach</span>
-            </div>
           </motion.div>
         </div>
       </div>

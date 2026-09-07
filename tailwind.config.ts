@@ -11,35 +11,35 @@ const config: Config = {
       colors: {
         brand: {
           blue: {
-            DEFAULT: "#0B2A6B",
-            deep: "#06183D",
-            navy: "#081E4D",
-            light: "#143D99",
+            DEFAULT: "#111111",
+            deep: "#0A0A0A",
+            navy: "#181818",
+            light: "#242424",
             bright: "#1D5FD6",
-            sky: "#EBF2FF",
+            sky: "#F0F4FA",
           },
           gold: {
             DEFAULT: "#D4AF37",
             light: "#F3C64F",
             dark: "#AA8A2A",
-            pale: "#FFF8E7",
+            pale: "#FFFBF0",
             glow: "rgba(212, 175, 55, 0.35)",
           },
           cream: {
-            DEFAULT: "#FAF7F0",
-            light: "#FDFBF7",
-            dark: "#EFE8DA",
+            DEFAULT: "#FBF9F5",
+            light: "#FFFFFF",
+            dark: "#F0ECE1",
           },
           charcoal: {
-            DEFAULT: "#1A1A1A",
+            DEFAULT: "#111111",
             muted: "#4A4A4A",
             light: "#717171",
           },
         },
       },
       fontFamily: {
-        heading: ["var(--font-heading)", "Georgia", "serif"],
-        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+        heading: ["var(--font-heading)", "Syne", "sans-serif"],
+        sans: ["var(--font-sans)", "DM Sans", "system-ui", "sans-serif"],
       },
       borderRadius: {
         "2xl": "16px",

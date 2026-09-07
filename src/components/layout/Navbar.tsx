@@ -55,10 +55,10 @@ export function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 bg-brand-blue-deep border-b border-brand-gold/20 ${
           isScrolled
-            ? "bg-brand-blue-deep/90 py-3 shadow-xl backdrop-blur-md border-b border-brand-gold/20"
-            : "bg-gradient-to-b from-brand-blue-deep/80 via-brand-blue-deep/40 to-transparent py-5"
+            ? "py-3 shadow-xl backdrop-blur-md"
+            : "py-5"
         }`}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">

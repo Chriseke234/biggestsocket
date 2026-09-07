@@ -1,28 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --font-heading: 'Playfair Display', Georgia, serif;
-  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
-  --bg-cream: #FAF7F0;
-  --primary-blue: #0B2A6B;
+  --font-heading: 'Syne', sans-serif;
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --bg-cream: #FBF9F5;
+  --primary-blue: #111111;
   --gold-primary: #D4AF37;
 }
 
 html {
   scroll-behavior: smooth;
   background-color: var(--bg-cream);
-  color: #1A1A1A;
+  color: #111111;
   font-family: var(--font-sans);
 }
 
 body {
   overflow-x: hidden;
   min-height: 100vh;
-  background-color: #FAF7F0;
+  background-color: #FBF9F5;
 }
 
 /* Custom gold gradient styling */
