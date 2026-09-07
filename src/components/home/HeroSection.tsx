@@ -10,7 +10,6 @@ import { SparkleMotif } from "@/components/ui/SparkleMotif";
 
 interface HeroSlide {
   id: string;
-  tagline: string;
   headlineMain: string;
   headlineHighlight: string;
   subtext: string;
@@ -21,7 +20,6 @@ interface HeroSlide {
 const heroSlides: HeroSlide[] = [
   {
     id: "slide-1",
-    tagline: "Bespoke Celebrations & Galas",
     headlineMain: "Unforgettable Events, ",
     headlineHighlight: "Expertly Delivered",
     subtext:
@@ -32,7 +30,6 @@ const heroSlides: HeroSlide[] = [
   },
   {
     id: "slide-2",
-    tagline: "Direct Talent & Entertainment",
     headlineMain: "A-List Artists & ",
     headlineHighlight: "Iconic Concerts",
     subtext:
@@ -43,7 +40,6 @@ const heroSlides: HeroSlide[] = [
   },
   {
     id: "slide-3",
-    tagline: "Verified Real Estate Advisory",
     headlineMain: "Prime Land & ",
     headlineHighlight: "Property Acquisitions",
     subtext:
@@ -54,7 +50,6 @@ const heroSlides: HeroSlide[] = [
   },
   {
     id: "slide-4",
-    tagline: "VIP Transportation Logistics",
     headlineMain: "Executive Fleets & ",
     headlineHighlight: "Luxury Convoys",
     subtext:
@@ -65,7 +60,6 @@ const heroSlides: HeroSlide[] = [
   },
   {
     id: "slide-5",
-    tagline: "High-Fidelity Audio Engineering",
     headlineMain: "World-Class Studio & ",
     headlineHighlight: "Arena Live Sound",
     subtext:
@@ -108,7 +102,7 @@ export function HeroSection() {
         >
           <Image
             src={currentSlide.image}
-            alt={currentSlide.tagline}
+            alt={currentSlide.headlineMain}
             fill
             sizes="100vw"
             className="object-cover"
@@ -131,14 +125,8 @@ export function HeroSection() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="flex flex-col items-center"
           >
-            {/* Tagline Pill */}
-            <div className="inline-flex items-center gap-2 rounded-full bg-[#18202A]/90 px-4 py-1.5 text-xs font-bold tracking-wider uppercase text-brand-gold border border-brand-gold/30 backdrop-blur-md">
-              <Sparkles className="h-3.5 w-3.5 text-brand-gold" />
-              <span>{currentSlide.tagline}</span>
-            </div>
-
             {/* Headline */}
-            <h1 className="mt-6 max-w-5xl font-heading text-4xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-7xl leading-[1.12]">
+            <h1 className="max-w-5xl font-heading text-4xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-7xl leading-[1.12]">
               {currentSlide.headlineMain}
               <span className="text-brand-gold block sm:inline">
                 {currentSlide.headlineHighlight}
