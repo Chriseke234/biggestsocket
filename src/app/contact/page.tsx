@@ -28,14 +28,14 @@ export default function ContactPage() {
             Let&apos;s Discuss Your <span className="gold-gradient-text">Next Milestone</span>
           </h1>
 
-          <p className="mt-4 max-w-2xl mx-auto text-base sm:text-lg text-brand-cream/90 leading-relaxed">
+          <p className="mt-4 max-w-2xl mx-auto text-base sm:text-lg text-[#CBD5E1] leading-relaxed">
             Whether booking an A-list artist, coordinating luxury wedding transport, or acquiring prime property, our specialists respond within hours.
           </p>
         </div>
       </section>
 
       {/* Main Two-Column Contact Section */}
-      <section className="py-20 sm:py-28 bg-brand-cream relative">
+      <section className="py-20 sm:py-28 bg-[#0B0F14] relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-start">
             {/* Left: Interactive Booking Form (7 cols on desktop) */}

@@ -46,7 +46,7 @@ function Counter({
   }, [isInView, target]);
 
   return (
-    <span ref={ref} className="font-heading font-extrabold text-brand-blue-deep">
+    <span ref={ref} className="font-heading font-extrabold text-white">
       {count}
       {suffix}
     </span>
@@ -82,18 +82,18 @@ const valueProps = [
 
 export function WhyChooseUs() {
   return (
-    <section className="relative py-24 sm:py-32 bg-brand-cream overflow-hidden">
+    <section className="relative py-24 sm:py-32 bg-[#0B0F14] overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="mx-auto max-w-3xl text-center">
-          <div className="inline-flex items-center gap-2 rounded-full bg-brand-blue/10 px-4 py-1.5 text-xs font-bold text-brand-blue border border-brand-blue/20">
+          <div className="inline-flex items-center gap-2 rounded-full bg-[#18202A] px-4 py-1.5 text-xs font-bold text-brand-gold border border-brand-gold/30">
             <Sparkles className="h-3.5 w-3.5 text-brand-gold" />
             <span>The Uncle Skillful Advantage</span>
           </div>
-          <h2 className="mt-4 font-heading text-3xl font-extrabold text-brand-blue-deep sm:text-5xl tracking-tight">
+          <h2 className="mt-4 font-heading text-3xl font-extrabold text-white sm:text-5xl tracking-tight">
             Why Discerning Clients Trust Us
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-brand-charcoal-muted">
+          <p className="mt-4 text-base sm:text-lg text-[#E2E8F0]">
             We bridge the gap between creative festivity and executive rigor, delivering peace of mind on every milestone.
           </p>
         </div>
@@ -107,16 +107,16 @@ export function WhyChooseUs() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="relative overflow-hidden rounded-3xl bg-white p-6 sm:p-8 text-center shadow-card border border-brand-gold/30 hover:border-brand-gold hover:shadow-xl transition-all"
+              className="relative overflow-hidden rounded-3xl bg-[#121820] p-6 sm:p-8 text-center shadow-card border border-[#1E293B] hover:border-brand-gold/40 transition-all"
             >
-              <div className="absolute top-0 left-0 right-0 h-1.5 gold-gradient-bg" />
-              <div className="text-3xl sm:text-5xl text-brand-blue-deep">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-brand-gold" />
+              <div className="text-3xl sm:text-5xl text-white">
                 <Counter target={stat.value} suffix={stat.suffix} />
               </div>
-              <h3 className="mt-2 font-heading text-base sm:text-lg font-bold text-brand-charcoal">
+              <h3 className="mt-2 font-heading text-base sm:text-lg font-bold text-white">
                 {stat.label}
               </h3>
-              <p className="mt-1 text-xs text-brand-charcoal-muted">
+              <p className="mt-1 text-xs text-[#94A3B8]">
                 {stat.description}
               </p>
             </motion.div>
@@ -134,15 +134,15 @@ export function WhyChooseUs() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="rounded-2xl bg-white/70 p-6 border border-brand-gold/20 shadow-soft hover:bg-white hover:shadow-card transition-all"
+                className="rounded-2xl bg-[#121820] p-6 border border-[#1E293B] hover:border-brand-gold/30 shadow-card transition-all"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-blue text-brand-gold shadow-md">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-gold text-[#0B0F14] shadow-md">
                   <Icon className="h-6 w-6" />
                 </div>
-                <h4 className="mt-4 font-heading text-lg font-bold text-brand-blue-deep">
+                <h4 className="mt-4 font-heading text-lg font-bold text-white">
                   {prop.title}
                 </h4>
-                <p className="mt-2 text-xs sm:text-sm leading-relaxed text-brand-charcoal-muted">
+                <p className="mt-2 text-xs sm:text-sm leading-relaxed text-[#E2E8F0]">
                   {prop.description}
                 </p>
               </motion.div>

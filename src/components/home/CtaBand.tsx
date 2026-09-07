@@ -14,23 +14,23 @@ export function CtaBand() {
   const mailtoUrl = `mailto:${companyData.email}?subject=Planning%20Inquiry%20-%20Uncle%20Skillful%20Limited`;
 
   return (
-    <section className="relative overflow-hidden py-20 lg:py-24 bg-brand-gold text-brand-blue-deep">
+    <section className="relative overflow-hidden py-20 lg:py-24 bg-brand-gold text-[#0B0F14]">
       {/* Subtle Pattern Elements */}
       <div className="pointer-events-none absolute -top-20 -right-20 h-64 w-64 rounded-full bg-white/20 blur-2xl" />
-      <div className="pointer-events-none absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-brand-blue-deep/10 blur-2xl" />
+      <div className="pointer-events-none absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-[#0B0F14]/10 blur-2xl" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10 text-center lg:text-left">
           {/* Left Title & Description */}
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 rounded-full bg-brand-blue-deep/15 px-4 py-1 text-xs font-bold uppercase tracking-wider text-brand-blue-deep">
+            <div className="inline-flex items-center gap-2 rounded-full bg-[#0B0F14]/15 px-4 py-1 text-xs font-bold uppercase tracking-wider text-[#0B0F14]">
               <Sparkles className="h-3.5 w-3.5" />
               <span>Let&apos;s Create Something Extraordinary</span>
             </div>
-            <h2 className="mt-4 font-heading text-3xl sm:text-5xl font-extrabold tracking-tight text-brand-blue-deep">
+            <h2 className="mt-4 font-heading text-3xl sm:text-5xl font-extrabold tracking-tight text-[#0B0F14]">
               Ready to Plan Your Next Landmark Event?
             </h2>
-            <p className="mt-4 text-base sm:text-lg font-medium text-brand-blue-deep/80 leading-relaxed">
+            <p className="mt-4 text-base sm:text-lg font-medium text-[#0B0F14]/90 leading-relaxed">
               Whether you need full-scale event coordination, celebrity headliners, luxury fleets, prime real estate, or world-class audio engineering — our team is on standby.
             </p>
           </div>
@@ -49,7 +49,7 @@ export function CtaBand() {
 
             <a
               href={mailtoUrl}
-              className="group flex w-full sm:w-auto items-center justify-center gap-3 rounded-full bg-brand-blue-deep px-8 py-4 text-base font-bold text-white shadow-xl hover:bg-brand-blue hover:shadow-2xl transition-all duration-300 transform hover:scale-105 active:scale-95"
+              className="group flex w-full sm:w-auto items-center justify-center gap-3 rounded-full bg-[#0B0F14] px-8 py-4 text-base font-bold text-white shadow-xl hover:bg-[#18202A] hover:shadow-2xl transition-all duration-300 transform hover:scale-105 active:scale-95"
             >
               <Mail className="h-5 w-5 text-brand-gold" />
               <span>Email Us</span>

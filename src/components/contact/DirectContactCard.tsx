@@ -22,9 +22,9 @@ export function DirectContactCard() {
   return (
     <div className="space-y-8">
       {/* Main Direct Contact Card */}
-      <div className="rounded-3xl bg-brand-blue-deep p-8 sm:p-10 text-white shadow-2xl border border-brand-gold/30 relative overflow-hidden">
+      <div className="rounded-3xl bg-[#121820] p-8 sm:p-10 text-white shadow-2xl border border-[#1E293B] relative overflow-hidden">
         {/* Decorative Gold Ambient Glow */}
-        <div className="pointer-events-none absolute -top-24 -right-24 h-64 w-64 rounded-full bg-brand-gold/20 blur-3xl" />
+        <div className="pointer-events-none absolute -top-24 -right-24 h-64 w-64 rounded-full bg-brand-gold/10 blur-3xl" />
 
         <div className="relative z-10 space-y-6">
           <div className="inline-flex items-center gap-2 rounded-full bg-brand-gold/20 px-3.5 py-1 text-xs font-semibold text-brand-gold border border-brand-gold/30">
@@ -36,7 +36,7 @@ export function DirectContactCard() {
             We Are Ready to Bring Your Vision to Life
           </h3>
 
-          <p className="text-sm leading-relaxed text-brand-cream/80">
+          <p className="text-sm leading-relaxed text-[#CBD5E1]">
             Reach out directly to our principal event planners, talent booking coordinators, and property acquisition consultants.
           </p>
 
@@ -54,7 +54,7 @@ export function DirectContactCard() {
                   <MessageCircle className="h-6 w-6 text-white" />
                 </div>
                 <div className="text-left">
-                  <span className="block text-base font-bold leading-tight">
+                  <span className="block text-base font-bold leading-tight text-white">
                     Chat on WhatsApp
                   </span>
                   <span className="text-xs text-white/90">
@@ -68,31 +68,31 @@ export function DirectContactCard() {
             {/* Email Large Button */}
             <a
               href={mailtoUrl}
-              className="group flex items-center justify-between w-full rounded-2xl gold-gradient-bg px-5 py-4 text-brand-blue-deep shadow-gold hover:shadow-xl transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98]"
+              className="group flex items-center justify-between w-full rounded-2xl bg-brand-gold px-5 py-4 text-[#0B0F14] shadow-gold hover:bg-[#00c985] hover:shadow-xl transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98]"
             >
               <div className="flex items-center gap-3.5">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-blue-deep/15 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
-                  <Mail className="h-6 w-6 text-brand-blue-deep" />
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#0B0F14]/15 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
+                  <Mail className="h-6 w-6 text-[#0B0F14]" />
                 </div>
                 <div className="text-left">
-                  <span className="block text-base font-bold leading-tight">
+                  <span className="block text-base font-extrabold leading-tight text-[#0B0F14]">
                     Email Our Desk
                   </span>
-                  <span className="text-xs text-brand-blue-deep/80 break-all">
+                  <span className="text-xs text-[#0B0F14]/80 break-all font-medium">
                     {companyData.email}
                   </span>
                 </div>
               </div>
-              <ArrowUpRight className="h-5 w-5 text-brand-blue-deep transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+              <ArrowUpRight className="h-5 w-5 text-[#0B0F14] transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
             </a>
           </div>
 
           {/* Contact Details List */}
-          <div className="space-y-4 pt-4 border-t border-brand-gold/20 text-sm">
+          <div className="space-y-4 pt-4 border-t border-[#1E293B] text-sm">
             <div className="flex items-start gap-3">
               <Phone className="h-4 w-4 text-brand-gold shrink-0 mt-1" />
               <div>
-                <span className="block text-xs text-brand-cream/60 uppercase tracking-wider">
+                <span className="block text-xs text-[#94A3B8] uppercase tracking-wider">
                   Primary Line & WhatsApp
                 </span>
                 <a
@@ -107,7 +107,7 @@ export function DirectContactCard() {
             <div className="flex items-start gap-3">
               <Phone className="h-4 w-4 text-brand-gold shrink-0 mt-1" />
               <div>
-                <span className="block text-xs text-brand-cream/60 uppercase tracking-wider">
+                <span className="block text-xs text-[#94A3B8] uppercase tracking-wider">
                   Direct Line 2
                 </span>
                 <a
@@ -122,40 +122,40 @@ export function DirectContactCard() {
             <div className="flex items-start gap-3">
               <MapPin className="h-4 w-4 text-brand-gold shrink-0 mt-1" />
               <div>
-                <span className="block text-xs text-brand-cream/60 uppercase tracking-wider">
+                <span className="block text-xs text-[#94A3B8] uppercase tracking-wider">
                   Corporate Offices & Hubs
                 </span>
-                <span className="text-brand-cream/90">{companyData.address}</span>
+                <span className="text-[#E2E8F0]">{companyData.address}</span>
               </div>
             </div>
 
             <div className="flex items-start gap-3">
               <Clock className="h-4 w-4 text-brand-gold shrink-0 mt-1" />
               <div>
-                <span className="block text-xs text-brand-cream/60 uppercase tracking-wider">
+                <span className="block text-xs text-[#94A3B8] uppercase tracking-wider">
                   Operating Hours
                 </span>
-                <span className="text-brand-cream/90">{companyData.workingHours}</span>
+                <span className="text-[#E2E8F0]">{companyData.workingHours}</span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Map Placeholder Frame */}
-      <div className="overflow-hidden rounded-3xl bg-white p-4 shadow-card border border-brand-gold/30">
+      {/* Map Frame */}
+      <div className="overflow-hidden rounded-3xl bg-[#121820] p-4 shadow-card border border-[#1E293B]">
         <div className="mb-3 flex items-center justify-between px-2">
-          <div className="flex items-center gap-2 text-xs font-bold text-brand-blue-deep">
+          <div className="flex items-center gap-2 text-xs font-bold text-white">
             <MapPin className="h-4 w-4 text-brand-gold" />
             <span>Operational Hubs: Lagos, Abuja & Nationwide</span>
           </div>
-          <span className="text-[10px] font-semibold text-brand-gold-dark bg-brand-gold/15 px-2.5 py-0.5 rounded-full">
+          <span className="text-[10px] font-semibold text-brand-gold bg-brand-gold/15 border border-brand-gold/30 px-2.5 py-0.5 rounded-full">
             West Africa Reach
           </span>
         </div>
 
         {/* Embedded Interactive Map Frame */}
-        <div className="relative h-56 w-full overflow-hidden rounded-2xl border border-brand-gold/20">
+        <div className="relative h-56 w-full overflow-hidden rounded-2xl border border-[#243040]">
           <iframe
             title="Uncle Skillful Limited Operational HQ"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126844.06348633393!2d3.3514863!3d6.4478144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4ccddb30e01%3A0xb36b567d7a5b3a30!2sVictoria%20Island%2C%20Lagos!5e0!3m2!1sen!2sng!4v1680000000000!5m2!1sen!2sng"

@@ -73,7 +73,7 @@ export default function AboutPage() {
       </section>
 
       {/* Story Section */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="py-20 sm:py-28 bg-[#0B0F14]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Story Images */}
@@ -86,7 +86,7 @@ export default function AboutPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 hidden sm:block h-52 w-52 rounded-2xl overflow-hidden border-4 border-white shadow-xl">
+              <div className="absolute -bottom-6 -right-6 hidden sm:block h-52 w-52 rounded-2xl overflow-hidden border-4 border-[#0B0F14] shadow-xl">
                 <Image
                   src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&q=80"
                   alt="Concert Stage Sound"
@@ -98,16 +98,16 @@ export default function AboutPage() {
 
             {/* Story Text */}
             <div className="lg:col-span-6 space-y-6">
-              <span className="text-xs font-bold uppercase tracking-widest text-brand-gold-dark">
+              <span className="text-xs font-bold uppercase tracking-widest text-brand-gold">
                 Our Heritage & Philosophy
               </span>
-              <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-brand-blue-deep leading-tight">
+              <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-white leading-tight">
                 Where Executive Precision Meets Pure Celebration
               </h2>
-              <p className="text-sm sm:text-base leading-relaxed text-brand-charcoal-muted">
-                Founded with a singular vision to redefine Nigeria&apos;s event and entertainment landscape, <strong>Uncle Skillful Limited</strong> has grown into an integrated multi-service powerhouse. We recognized early on that a truly memorable event isn&apos;t just about pretty décor — it requires flawless security logistics, dependable executive mobility, electrifying sound engineering, verified venue/land assets, and seamless star bookings.
+              <p className="text-sm sm:text-base leading-relaxed text-[#E2E8F0]">
+                Founded with a singular vision to redefine Nigeria&apos;s event and entertainment landscape, <strong className="text-white font-semibold">Uncle Skillful Limited</strong> has grown into an integrated multi-service powerhouse. We recognized early on that a truly memorable event isn&apos;t just about pretty décor — it requires flawless security logistics, dependable executive mobility, electrifying sound engineering, verified venue/land assets, and seamless star bookings.
               </p>
-              <p className="text-sm sm:text-base leading-relaxed text-brand-charcoal-muted">
+              <p className="text-sm sm:text-base leading-relaxed text-[#E2E8F0]">
                 Today, with over 500 marquee events executed across Lagos, Abuja, Port Harcourt, and beyond, our multi-disciplinary team serves corporate giants, high-net-worth families, and diaspora clients with unmatched passion and precision.
               </p>
 
@@ -119,7 +119,7 @@ export default function AboutPage() {
                   "Direct A-List Talent Roster",
                   "Dedicated Senior Lead Planners",
                 ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-2 text-xs sm:text-sm font-semibold text-brand-blue-deep">
+                  <div key={i} className="flex items-center gap-2 text-xs sm:text-sm font-semibold text-white">
                     <CheckCircle className="h-4 w-4 text-brand-gold shrink-0" />
                     <span>{item}</span>
                   </div>
@@ -131,29 +131,29 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision Cards */}
-      <section className="py-20 bg-brand-cream border-y border-brand-gold/20">
+      <section className="py-20 bg-[#121820] border-y border-[#1E293B]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="rounded-3xl bg-brand-blue-deep p-8 sm:p-10 text-white shadow-xl border border-brand-gold/30">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-gold text-brand-blue-deep mb-6">
+            <div className="rounded-3xl bg-[#18202A] p-8 sm:p-10 text-white shadow-xl border border-brand-gold/30">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-gold text-[#0B0F14] mb-6">
                 <Target className="h-6 w-6" />
               </div>
               <h3 className="font-heading text-2xl font-bold text-white mb-3">
                 Our Mission
               </h3>
-              <p className="text-sm sm:text-base text-brand-cream/80 leading-relaxed">
+              <p className="text-sm sm:text-base text-[#E2E8F0] leading-relaxed">
                 To deliver extraordinary event experiences, seamless talent engagements, verified property acquisitions, and elite logistical solutions across Nigeria with unmatched reliability, luxury flair, and integrity.
               </p>
             </div>
 
-            <div className="rounded-3xl bg-white p-8 sm:p-10 text-brand-charcoal shadow-xl border border-brand-gold/30">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-blue text-brand-gold mb-6">
+            <div className="rounded-3xl bg-[#18202A] p-8 sm:p-10 text-white shadow-xl border border-[#243040]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#243040] text-brand-gold mb-6 border border-brand-gold/30">
                 <Eye className="h-6 w-6" />
               </div>
-              <h3 className="font-heading text-2xl font-bold text-brand-blue-deep mb-3">
+              <h3 className="font-heading text-2xl font-bold text-white mb-3">
                 Our Vision
               </h3>
-              <p className="text-sm sm:text-base text-brand-charcoal-muted leading-relaxed">
+              <p className="text-sm sm:text-base text-[#E2E8F0] leading-relaxed">
                 To be West Africa&apos;s undisputed benchmark for multi-sector event excellence, celebrity curation, and luxury lifestyle infrastructure — celebrated worldwide for transformational quality and trust.
               </p>
             </div>
@@ -162,13 +162,13 @@ export default function AboutPage() {
       </section>
 
       {/* Core Values */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-[#0B0F14]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center mb-16">
-            <span className="text-xs font-bold uppercase tracking-widest text-brand-gold-dark">
+            <span className="text-xs font-bold uppercase tracking-widest text-brand-gold">
               Guiding Principles
             </span>
-            <h2 className="mt-2 font-heading text-3xl sm:text-4xl font-extrabold text-brand-blue-deep">
+            <h2 className="mt-2 font-heading text-3xl sm:text-4xl font-extrabold text-white">
               The Values That Drive Every Milestone
             </h2>
           </div>
@@ -179,15 +179,15 @@ export default function AboutPage() {
               return (
                 <div
                   key={val.title}
-                  className="rounded-2xl bg-brand-cream/50 p-6 border border-brand-gold/20 shadow-soft hover:shadow-card hover:bg-white transition-all"
+                  className="rounded-2xl bg-[#121820] p-6 border border-[#1E293B] hover:border-brand-gold/40 transition-all text-white"
                 >
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-blue text-brand-gold mb-4">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-gold text-[#0B0F14] mb-4">
                     <Icon className="h-5 w-5" />
                   </div>
-                  <h4 className="font-heading text-lg font-bold text-brand-blue-deep">
+                  <h4 className="font-heading text-lg font-bold text-white">
                     {val.title}
                   </h4>
-                  <p className="mt-2 text-xs sm:text-sm text-brand-charcoal-muted leading-relaxed">
+                  <p className="mt-2 text-xs sm:text-sm text-[#E2E8F0] leading-relaxed">
                     {val.description}
                   </p>
                 </div>

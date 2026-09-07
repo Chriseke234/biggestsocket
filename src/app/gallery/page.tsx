@@ -27,7 +27,7 @@ export default function GalleryPage() {
             Portfolio of <span className="gold-gradient-text">Milestone Moments</span>
           </h1>
 
-          <p className="mt-4 max-w-2xl mx-auto text-base sm:text-lg text-brand-cream/90 leading-relaxed">
+          <p className="mt-4 max-w-2xl mx-auto text-base sm:text-lg text-[#CBD5E1] leading-relaxed">
             Filter through our signature weddings, concert sound stages, executive summits, verified lands, and luxury fleet deployments.
           </p>
         </div>

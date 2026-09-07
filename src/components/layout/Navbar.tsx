@@ -76,7 +76,7 @@ export function Navbar() {
                   className={`relative text-sm font-medium transition-colors duration-200 ${
                     isActive
                       ? "text-brand-gold font-bold"
-                      : "text-brand-cream/80 hover:text-brand-gold"
+                      : "text-[#E2E8F0] hover:text-brand-gold"
                   }`}
                 >
                   {link.name}
@@ -96,7 +96,7 @@ export function Navbar() {
             {/* Direct Phone quick indicator */}
             <a
               href={`tel:${companyData.phone1}`}
-              className="flex items-center gap-2 text-xs font-semibold text-brand-cream/90 hover:text-brand-gold transition-colors"
+              className="flex items-center gap-2 text-xs font-semibold text-[#E2E8F0] hover:text-brand-gold transition-colors"
             >
               <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-brand-gold">
                 <Phone className="h-4 w-4" />
@@ -108,38 +108,27 @@ export function Navbar() {
             <div className="relative">
               <button
                 onClick={() => setBookingModalOpen(true)}
-                className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full gold-gradient-bg px-6 py-2.5 text-sm font-bold text-brand-blue-deep shadow-gold transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-xl"
+                className="group flex items-center gap-2 rounded-full bg-brand-gold px-5 py-2.5 text-xs font-extrabold uppercase tracking-wider text-[#0B0F14] shadow-md shadow-brand-gold/20 hover:bg-[#00c985] hover:scale-105 transition-all duration-200"
               >
-                <Sparkles className="h-4 w-4 text-brand-blue-deep transition-transform duration-300 group-hover:rotate-12" />
-                <span>Book Now</span>
+                <span>Book a Service</span>
               </button>
             </div>
           </div>
 
-          {/* Mobile Menu Toggle Button */}
-          <div className="flex items-center gap-2 lg:hidden">
+          {/* Mobile Menu Button */}
+          <div className="flex lg:hidden items-center gap-3">
             <button
-              onClick={() => setBookingModalOpen(true)}
-              className="rounded-full gold-gradient-bg px-3.5 py-1.5 text-xs font-bold text-brand-blue-deep shadow-md active:scale-95"
+              onClick={() => setMobileMenuOpen(true)}
+              className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-white hover:bg-brand-gold hover:text-[#0B0F14] transition-colors"
+              aria-label="Open mobile navigation menu"
             >
-              Book
-            </button>
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-white border border-brand-gold/30 hover:bg-brand-gold hover:text-brand-blue-deep transition-colors"
-              aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
-            >
-              {mobileMenuOpen ? (
-                <X className="h-6 w-6" />
-              ) : (
-                <Menu className="h-6 w-6" />
-              )}
+              <Menu className="h-6 w-6" />
             </button>
           </div>
         </div>
       </header>
 
-      {/* Mobile Drawer Navigation */}
+      {/* Full-Screen Mobile Drawer */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <div className="fixed inset-0 z-50 lg:hidden">
@@ -149,30 +138,32 @@ export function Navbar() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setMobileMenuOpen(false)}
-              className="fixed inset-0 bg-brand-blue-deep/80 backdrop-blur-md"
+              className="fixed inset-0 bg-[#0B0F14]/85 backdrop-blur-md"
             />
 
-            {/* Slide-in Drawer */}
+            {/* Slide-in Menu Panel */}
             <motion.div
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="fixed top-0 right-0 bottom-0 w-4/5 max-w-sm bg-brand-blue-deep border-l border-brand-gold/30 p-6 flex flex-col justify-between shadow-2xl"
+              className="fixed inset-y-0 right-0 z-50 w-full max-w-sm bg-[#121820] border-l border-[#1E293B] p-6 shadow-2xl flex flex-col justify-between"
             >
               <div>
-                <div className="flex items-center justify-between pb-6 border-b border-brand-gold/20">
-                  <Logo variant="light" />
+                {/* Header */}
+                <div className="flex items-center justify-between pb-6 border-b border-[#1E293B]">
+                  <Logo variant="light" showTagline={false} />
                   <button
                     onClick={() => setMobileMenuOpen(false)}
-                    className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white hover:bg-brand-gold hover:text-brand-blue transition-colors"
+                    className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white hover:bg-brand-gold hover:text-[#0B0F14] transition-colors"
+                    aria-label="Close mobile navigation menu"
                   >
                     <X className="h-5 w-5" />
                   </button>
                 </div>
 
-                {/* Mobile Navigation Links */}
-                <div className="mt-8 flex flex-col gap-3">
+                {/* Navigation Items */}
+                <div className="space-y-1.5 py-6">
                   {navLinks.map((link) => {
                     const isActive = pathname === link.href;
                     return (
@@ -182,8 +173,8 @@ export function Navbar() {
                         onClick={() => setMobileMenuOpen(false)}
                         className={`flex items-center justify-between rounded-xl px-4 py-3 text-base font-semibold transition-all ${
                           isActive
-                            ? "bg-brand-gold text-brand-blue-deep shadow-md font-bold"
-                            : "text-brand-cream hover:bg-white/10 hover:text-brand-gold"
+                            ? "bg-brand-gold text-[#0B0F14] shadow-md font-bold"
+                            : "text-[#E2E8F0] hover:bg-white/10 hover:text-brand-gold"
                         }`}
                       >
                         <span>{link.name}</span>
@@ -195,19 +186,18 @@ export function Navbar() {
               </div>
 
               {/* Mobile Drawer Bottom CTAs */}
-              <div className="space-y-4 pt-6 border-t border-brand-gold/20">
+              <div className="space-y-4 pt-6 border-t border-[#1E293B]">
                 <button
                   onClick={() => {
                     setMobileMenuOpen(false);
                     setBookingModalOpen(true);
                   }}
-                  className="w-full flex items-center justify-center gap-2 rounded-xl gold-gradient-bg py-3.5 text-sm font-bold text-brand-blue-deep shadow-gold"
+                  className="w-full flex items-center justify-center gap-2 rounded-xl bg-brand-gold py-3.5 text-sm font-extrabold text-[#0B0F14] shadow-gold hover:bg-[#00c985]"
                 >
-                  <Sparkles className="h-4 w-4" />
                   <span>Book a Service</span>
                 </button>
 
-                <div className="flex flex-col gap-2 text-xs text-brand-cream/80">
+                <div className="flex flex-col gap-2 text-xs text-[#CBD5E1]">
                   <a
                     href={`tel:${companyData.phone1}`}
                     className="flex items-center gap-2 hover:text-brand-gold"
@@ -220,7 +210,7 @@ export function Navbar() {
                     className="flex items-center gap-2 hover:text-brand-gold"
                   >
                     <Mail className="h-3.5 w-3.5 text-brand-gold" />
-                    <span>{companyData.email}</span>
+                    <span className="truncate">{companyData.email}</span>
                   </a>
                 </div>
               </div>

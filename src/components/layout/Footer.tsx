@@ -20,16 +20,16 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative bg-brand-blue-deep border-t border-brand-gold/30 text-white overflow-hidden">
-      {/* Decorative Gold Accent Gradient Glow */}
-      <div className="pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2 h-80 w-[800px] rounded-full bg-brand-gold/10 blur-[120px]" />
+    <footer className="relative bg-[#0B0F14] border-t border-[#1E293B] text-white overflow-hidden">
+      {/* Decorative Gold Accent Glow */}
+      <div className="pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2 h-80 w-[800px] rounded-full bg-brand-gold/5 blur-[120px]" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-16 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
           {/* Col 1: Brand Info (5 cols on desktop) */}
           <div className="lg:col-span-4 space-y-5">
             <Logo variant="light" showTagline={true} />
-            <p className="text-sm leading-relaxed text-brand-cream/80 max-w-sm">
+            <p className="text-sm leading-relaxed text-[#CBD5E1] max-w-sm">
               Nigeria&apos;s foremost multi-faceted event management, entertainment logistics, and luxury lifestyle powerhouse. Delivering unforgettable celebrations and precision corporate execution nationwide.
             </p>
 
@@ -60,7 +60,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={s.name}
-                  className="flex h-9 w-9 items-center justify-center rounded-xl bg-white/10 text-brand-cream hover:bg-brand-gold hover:text-brand-blue-deep transition-all duration-200 transform hover:scale-110"
+                  className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#18202A] text-[#CBD5E1] hover:bg-brand-gold hover:text-[#0B0F14] border border-[#243040] transition-all duration-200 transform hover:scale-110"
                 >
                   {s.icon}
                 </a>
@@ -78,7 +78,7 @@ export function Footer() {
                 <li key={service.id}>
                   <Link
                     href={`/services#${service.id}`}
-                    className="group flex items-center gap-2 text-brand-cream/80 hover:text-brand-gold transition-colors"
+                    className="group flex items-center gap-2 text-[#CBD5E1] hover:text-brand-gold transition-colors"
                   >
                     <ArrowRight className="h-3 w-3 text-brand-gold transition-transform group-hover:translate-x-1" />
                     <span>{service.title}</span>
@@ -104,7 +104,7 @@ export function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-brand-cream/80 hover:text-brand-gold transition-colors"
+                    className="text-[#CBD5E1] hover:text-brand-gold transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -118,7 +118,7 @@ export function Footer() {
             <h4 className="font-heading text-base font-bold text-brand-gold tracking-wide uppercase">
               Direct Contact
             </h4>
-            <div className="space-y-3 text-sm text-brand-cream/80">
+            <div className="space-y-3 text-sm text-[#CBD5E1]">
               <a
                 href={`mailto:${companyData.email}`}
                 className="flex items-start gap-3 hover:text-brand-gold transition-colors"
@@ -157,7 +157,7 @@ export function Footer() {
         </div>
 
         {/* Bottom divider & copyright */}
-        <div className="mt-12 pt-8 border-t border-brand-gold/20 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-brand-cream/60">
+        <div className="mt-12 pt-8 border-t border-[#1E293B] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#94A3B8]">
           <p>© {currentYear} {companyData.name}. All Rights Reserved.</p>
           <div className="flex items-center gap-6">
             <Link href="/contact" className="hover:text-brand-gold">

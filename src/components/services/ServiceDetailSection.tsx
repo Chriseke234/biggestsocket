@@ -52,7 +52,7 @@ export function ServiceDetailSection({
     <section
       id={service.id}
       className={`scroll-mt-24 py-20 sm:py-28 ${
-        isEven ? "bg-white" : "bg-brand-cream"
+        isEven ? "bg-[#0B0F14]" : "bg-[#121820]"
       } relative overflow-hidden`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -78,15 +78,15 @@ export function ServiceDetailSection({
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover transition-transform duration-700 hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-blue-deep/60 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-black/40" />
 
               {/* Floating Stat / Badge on Image */}
-              <div className="absolute bottom-6 left-6 right-6 rounded-2xl bg-brand-blue-deep/90 p-4 border border-brand-gold/30 backdrop-blur-md text-white">
+              <div className="absolute bottom-6 left-6 right-6 rounded-2xl bg-[#0B0F14]/95 p-4 border border-brand-gold/30 backdrop-blur-md text-white">
                 <div className="flex items-center gap-2 text-xs font-semibold text-brand-gold uppercase tracking-wider">
                   <Sparkles className="h-3.5 w-3.5 text-brand-gold" />
                   <span>Key Advantage</span>
                 </div>
-                <p className="mt-1 text-xs sm:text-sm font-medium text-brand-cream/90">
+                <p className="mt-1 text-xs sm:text-sm font-medium text-[#E2E8F0]">
                   {service.keyBenefits[0]}
                 </p>
               </div>
@@ -109,35 +109,35 @@ export function ServiceDetailSection({
           >
             {/* Category & Number Header */}
             <div className="flex items-center gap-3">
-              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-blue text-brand-gold shadow-md">
+              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-gold text-[#0B0F14] shadow-md font-bold">
                 <IconComponent className="h-6 w-6" />
               </span>
               <div>
-                <span className="text-xs font-bold text-brand-gold-dark tracking-widest uppercase">
+                <span className="text-xs font-bold text-brand-gold tracking-widest uppercase">
                   Service #{service.number} • {service.category}
                 </span>
-                <h3 className="font-heading text-3xl sm:text-4xl font-extrabold text-brand-blue-deep leading-tight">
+                <h3 className="font-heading text-3xl sm:text-4xl font-extrabold text-white leading-tight">
                   {service.title}
                 </h3>
               </div>
             </div>
 
-            <p className="text-base sm:text-lg font-medium text-brand-gold-dark leading-snug">
+            <p className="text-base sm:text-lg font-medium text-brand-gold leading-snug">
               {service.tagline}
             </p>
 
-            <p className="text-sm sm:text-base leading-relaxed text-brand-charcoal-muted">
+            <p className="text-sm sm:text-base leading-relaxed text-[#E2E8F0]">
               {service.fullDescription}
             </p>
 
             {/* What's Included Bullet List */}
             <div className="space-y-3 pt-2">
-              <h4 className="font-heading text-base font-bold text-brand-blue-deep uppercase tracking-wide">
+              <h4 className="font-heading text-base font-bold text-white uppercase tracking-wide">
                 What&apos;s Included:
               </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                 {service.includedList.map((item, i) => (
-                  <div key={i} className="flex items-start gap-2.5 text-xs sm:text-sm text-brand-charcoal">
+                  <div key={i} className="flex items-start gap-2.5 text-xs sm:text-sm text-[#CBD5E1]">
                     <CheckCircle2 className="h-4 w-4 text-brand-gold shrink-0 mt-0.5" />
                     <span>{item}</span>
                   </div>
@@ -146,10 +146,10 @@ export function ServiceDetailSection({
             </div>
 
             {/* Action Buttons: WhatsApp + Email + Modal */}
-            <div className="pt-6 flex flex-wrap items-center gap-4 border-t border-brand-gold/20">
+            <div className="pt-6 flex flex-wrap items-center gap-4 border-t border-[#1E293B]">
               <button
                 onClick={() => setModalOpen(true)}
-                className="inline-flex items-center gap-2 rounded-full gold-gradient-bg px-6 py-3.5 text-sm font-bold text-brand-blue-deep shadow-gold hover:scale-105 active:scale-95 transition-all duration-200"
+                className="inline-flex items-center gap-2 rounded-full bg-brand-gold px-6 py-3.5 text-sm font-bold text-[#0B0F14] shadow-gold hover:scale-105 active:scale-95 transition-all duration-200"
               >
                 <Sparkles className="h-4 w-4" />
                 <span>Book This Service</span>
@@ -167,7 +167,7 @@ export function ServiceDetailSection({
 
               <a
                 href={mailtoUrl}
-                className="inline-flex items-center gap-2 rounded-full bg-brand-blue px-5 py-3 text-xs sm:text-sm font-bold text-white hover:bg-brand-blue-navy transition-all hover:scale-105 shadow-md"
+                className="inline-flex items-center gap-2 rounded-full bg-[#18202A] border border-[#243040] px-5 py-3 text-xs sm:text-sm font-bold text-white hover:bg-[#243040] transition-all hover:scale-105 shadow-md"
               >
                 <Mail className="h-4 w-4 text-brand-gold" />
                 <span>Email Us</span>

@@ -29,7 +29,7 @@ export default function ServicesPage() {
             Tailored Luxury & <span className="gold-gradient-text">Flawless Execution</span>
           </h1>
 
-          <p className="mt-4 max-w-2xl mx-auto text-base sm:text-lg text-brand-cream/90 leading-relaxed">
+          <p className="mt-4 max-w-2xl mx-auto text-base sm:text-lg text-[#CBD5E1] leading-relaxed">
             Every celebration, high-level negotiation, and production requirement is handled by dedicated domain specialists. Explore our five core offerings below.
           </p>
 
@@ -39,7 +39,7 @@ export default function ServicesPage() {
               <a
                 key={svc.id}
                 href={`#${svc.id}`}
-                className="inline-flex items-center gap-1.5 rounded-full bg-brand-blue-navy/80 px-4 py-2 text-xs font-semibold text-brand-cream hover:bg-brand-gold hover:text-brand-blue-deep transition-all duration-200 border border-brand-gold/20"
+                className="inline-flex items-center gap-1.5 rounded-full bg-[#18202A] px-4 py-2 text-xs font-semibold text-[#E2E8F0] hover:bg-brand-gold hover:text-[#0B0F14] transition-all duration-200 border border-[#243040]"
               >
                 <span>{svc.title}</span>
                 <ArrowDown className="h-3 w-3" />
@@ -50,7 +50,7 @@ export default function ServicesPage() {
       </section>
 
       {/* 5 Alternating Service Detail Sections */}
-      <div className="divide-y divide-brand-gold/20">
+      <div className="divide-y divide-[#1E293B]">
         {servicesData.map((service, index) => (
           <ServiceDetailSection
             key={service.id}

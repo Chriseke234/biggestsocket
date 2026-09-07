@@ -53,7 +53,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="flex min-h-screen flex-col bg-brand-cream text-brand-charcoal antialiased selection:bg-brand-gold selection:text-brand-blue-deep">
+      <body className="flex min-h-screen flex-col bg-[#0B0F14] text-[#E2E8F0] antialiased selection:bg-brand-gold selection:text-[#0B0F14]">
         {/* Top Gold Scroll Progress Indicator */}
         <ScrollProgress />
 

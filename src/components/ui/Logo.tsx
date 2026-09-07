@@ -44,7 +44,7 @@ export function Logo({ variant = "light", className = "", showTagline = false }:
             LIMITED
           </span>
           <span className="h-1 w-1 rounded-full bg-brand-gold"></span>
-          <span className="text-[9px] text-brand-charcoal-muted tracking-wider uppercase font-semibold">
+          <span className="text-[9px] text-[#94A3B8] tracking-wider uppercase font-semibold">
             BIGGEST SOCKET
           </span>
         </div>

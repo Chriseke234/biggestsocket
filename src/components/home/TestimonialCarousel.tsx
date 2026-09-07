@@ -31,11 +31,11 @@ export function TestimonialCarousel() {
     <section
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
-      className="relative py-24 sm:py-32 bg-brand-blue-deep text-white overflow-hidden"
+      className="relative py-24 sm:py-32 bg-[#0B0F14] text-white overflow-hidden"
     >
       {/* Decorative Gold Elements */}
-      <div className="pointer-events-none absolute -top-40 right-0 h-96 w-96 rounded-full bg-brand-gold/15 blur-[120px]" />
-      <div className="pointer-events-none absolute bottom-0 left-10 h-80 w-80 rounded-full bg-brand-blue-bright/20 blur-[100px]" />
+      <div className="pointer-events-none absolute -top-40 right-0 h-96 w-96 rounded-full bg-brand-gold/10 blur-[120px]" />
+      <div className="pointer-events-none absolute bottom-0 left-10 h-80 w-80 rounded-full bg-brand-gold/5 blur-[100px]" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -47,14 +47,14 @@ export function TestimonialCarousel() {
           <h2 className="mt-4 font-heading text-3xl font-extrabold text-white sm:text-5xl tracking-tight">
             Voices of Unforgettable Celebrations
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-brand-cream/80">
+          <p className="mt-4 text-base sm:text-lg text-[#CBD5E1]">
             Read what corporate titans, diaspora investors, and happy couples say about working with Uncle Skillful Limited.
           </p>
         </div>
 
         {/* Carousel Viewport */}
         <div className="mt-16 mx-auto max-w-4xl">
-          <div className="relative rounded-3xl bg-brand-blue-navy/80 border border-brand-gold/30 p-8 sm:p-12 shadow-2xl backdrop-blur-md">
+          <div className="relative rounded-3xl bg-[#121820] border border-[#1E293B] p-8 sm:p-12 shadow-2xl backdrop-blur-md">
             {/* Quote Icon SVG */}
             <div className="absolute top-6 right-6 text-brand-gold/20">
               <Quote className="h-16 w-16 sm:h-20 sm:w-20" />
@@ -77,7 +77,7 @@ export function TestimonialCarousel() {
                       className="h-5 w-5 fill-brand-gold text-brand-gold"
                     />
                   ))}
-                  <span className="ml-2 text-xs font-semibold text-brand-gold-light uppercase tracking-wider">
+                  <span className="ml-2 text-xs font-semibold text-brand-gold uppercase tracking-wider">
                     {current.serviceCategory}
                   </span>
                 </div>
@@ -88,7 +88,7 @@ export function TestimonialCarousel() {
                 </blockquote>
 
                 {/* Author Info */}
-                <div className="mt-8 flex items-center gap-4 border-t border-brand-gold/20 pt-6">
+                <div className="mt-8 flex items-center gap-4 border-t border-[#1E293B] pt-6">
                   <div className="relative h-14 w-14 overflow-hidden rounded-full border-2 border-brand-gold shadow-md shrink-0">
                     <Image
                       src={current.avatar}
@@ -103,16 +103,16 @@ export function TestimonialCarousel() {
                       {current.name}
                     </h4>
                     <p className="text-xs sm:text-sm text-brand-gold">
-                      {current.role} • <span className="text-brand-cream/80">{current.companyOrEvent}</span>
+                      {current.role} • <span className="text-[#CBD5E1]">{current.companyOrEvent}</span>
                     </p>
-                    <p className="text-xs text-brand-cream/60">{current.location}</p>
+                    <p className="text-xs text-[#94A3B8]">{current.location}</p>
                   </div>
                 </div>
               </motion.div>
             </AnimatePresence>
 
             {/* Manual Controls */}
-            <div className="mt-8 flex items-center justify-between border-t border-brand-gold/10 pt-4">
+            <div className="mt-8 flex items-center justify-between border-t border-[#1E293B] pt-4">
               {/* Dots */}
               <div className="flex items-center gap-2">
                 {testimonialsData.map((_, idx) => (
@@ -121,7 +121,7 @@ export function TestimonialCarousel() {
                     onClick={() => setCurrentIndex(idx)}
                     className={`h-2.5 rounded-full transition-all duration-300 ${
                       currentIndex === idx
-                        ? "w-8 gold-gradient-bg"
+                        ? "w-8 bg-brand-gold"
                         : "w-2.5 bg-white/20 hover:bg-brand-gold/50"
                     }`}
                     aria-label={`Go to slide ${idx + 1}`}
@@ -133,14 +133,14 @@ export function TestimonialCarousel() {
               <div className="flex items-center gap-2">
                 <button
                   onClick={handlePrev}
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-brand-gold hover:text-brand-blue-deep transition-all duration-200 active:scale-95"
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-brand-gold hover:text-[#0B0F14] transition-all duration-200 active:scale-95"
                   aria-label="Previous testimonial"
                 >
                   <ChevronLeft className="h-5 w-5" />
                 </button>
                 <button
                   onClick={handleNext}
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-brand-gold hover:text-brand-blue-deep transition-all duration-200 active:scale-95"
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-brand-gold hover:text-[#0B0F14] transition-all duration-200 active:scale-95"
                   aria-label="Next testimonial"
                 >
                   <ChevronRight className="h-5 w-5" />

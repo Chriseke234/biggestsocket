@@ -61,11 +61,11 @@ export function Lightbox({
   return (
     <AnimatePresence>
       {isOpen && currentItem && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-brand-blue-deep/95 backdrop-blur-xl">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#0B0F14]/95 backdrop-blur-xl">
           {/* Close button */}
           <button
             onClick={onClose}
-            className="absolute top-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white hover:bg-brand-gold hover:text-brand-blue-deep transition-all duration-200"
+            className="absolute top-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white hover:bg-brand-gold hover:text-[#0B0F14] transition-all duration-200"
             aria-label="Close Lightbox"
           >
             <X className="h-6 w-6" />
@@ -74,7 +74,7 @@ export function Lightbox({
           {/* Navigation Prev Button */}
           <button
             onClick={handlePrev}
-            className="absolute left-4 sm:left-8 z-50 flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-full bg-white/10 text-white hover:bg-brand-gold hover:text-brand-blue-deep transition-all duration-200"
+            className="absolute left-4 sm:left-8 z-50 flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-full bg-white/10 text-white hover:bg-brand-gold hover:text-[#0B0F14] transition-all duration-200"
             aria-label="Previous image"
           >
             <ChevronLeft className="h-7 w-7" />
@@ -83,7 +83,7 @@ export function Lightbox({
           {/* Navigation Next Button */}
           <button
             onClick={handleNext}
-            className="absolute right-4 sm:right-8 z-50 flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-full bg-white/10 text-white hover:bg-brand-gold hover:text-brand-blue-deep transition-all duration-200"
+            className="absolute right-4 sm:right-8 z-50 flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-full bg-white/10 text-white hover:bg-brand-gold hover:text-[#0B0F14] transition-all duration-200"
             aria-label="Next image"
           >
             <ChevronRight className="h-7 w-7" />
@@ -99,7 +99,7 @@ export function Lightbox({
             className="relative flex flex-col items-center max-w-5xl w-full mx-auto px-4 py-8"
           >
             {/* Image Container */}
-            <div className="relative w-full h-[60vh] sm:h-[70vh] rounded-2xl overflow-hidden shadow-2xl border border-brand-gold/20">
+            <div className="relative w-full h-[60vh] sm:h-[70vh] rounded-2xl overflow-hidden shadow-2xl border border-[#243040]">
               <Image
                 src={currentItem.image}
                 alt={currentItem.title}
@@ -111,14 +111,14 @@ export function Lightbox({
             </div>
 
             {/* Bottom Caption Bar */}
-            <div className="w-full mt-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 rounded-xl bg-brand-blue-navy/80 px-5 py-3.5 border border-brand-gold/20 text-white backdrop-blur-md">
+            <div className="w-full mt-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 rounded-xl bg-[#121820]/95 px-5 py-3.5 border border-[#243040] text-white backdrop-blur-md">
               <div>
                 <div className="flex items-center gap-2 mb-1">
-                  <span className="inline-flex items-center gap-1 rounded-md bg-brand-gold/20 px-2 py-0.5 text-xs font-semibold text-brand-gold-light border border-brand-gold/30">
+                  <span className="inline-flex items-center gap-1 rounded-md bg-brand-gold/20 px-2 py-0.5 text-xs font-semibold text-brand-gold border border-brand-gold/30">
                     <Tag className="h-3 w-3" />
                     {currentItem.category}
                   </span>
-                  <span className="flex items-center gap-1 text-xs text-brand-cream/70">
+                  <span className="flex items-center gap-1 text-xs text-[#CBD5E1]">
                     <MapPin className="h-3 w-3 text-brand-gold" />
                     {currentItem.location}
                   </span>
@@ -126,7 +126,7 @@ export function Lightbox({
                 <h4 className="font-heading text-lg font-bold text-white">
                   {currentItem.title}
                 </h4>
-                <p className="text-xs text-brand-cream/80 max-w-2xl">
+                <p className="text-xs text-[#E2E8F0] max-w-2xl">
                   {currentItem.description}
                 </p>
               </div>

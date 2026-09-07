@@ -79,7 +79,7 @@ export function PhotoShowcase() {
               <div className="mt-4 flex items-center justify-between border-t border-brand-gold/20 pt-3">
                 <Link
                   href={card.link}
-                  className="inline-flex items-center gap-1.5 text-xs font-bold text-brand-cream group-hover:text-brand-gold transition-colors"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#E2E8F0] group-hover:text-brand-gold transition-colors"
                 >
                   <span>Explore Service</span>
                   <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

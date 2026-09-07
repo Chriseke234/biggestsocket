@@ -16,7 +16,7 @@ export function FilterableGallery() {
     : galleryData.filter((item) => item.category === selectedCategory);
 
   return (
-    <section className="py-16 sm:py-24 bg-brand-cream min-h-screen">
+    <section className="py-16 sm:py-24 bg-[#0B0F14] min-h-screen">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Category Filter Chips Bar */}
         <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 mb-12">
@@ -29,15 +29,15 @@ export function FilterableGallery() {
                 onClick={() => setSelectedCategory(category)}
                 className={`relative rounded-full px-5 py-2.5 text-xs sm:text-sm font-bold transition-all duration-300 ${
                   isActive
-                    ? "gold-gradient-bg text-brand-blue-deep shadow-gold scale-105"
-                    : "bg-white text-brand-charcoal hover:bg-brand-gold/15 hover:text-brand-blue-deep border border-brand-gold/20 shadow-sm"
+                    ? "bg-brand-gold text-[#0B0F14] font-extrabold shadow-gold scale-105"
+                    : "bg-[#18202A] text-[#E2E8F0] hover:bg-brand-gold/20 hover:text-brand-gold border border-[#243040] shadow-sm"
                 }`}
               >
                 <span>{category}</span>
                 {isActive && (
                   <motion.div
                     layoutId="activeFilterPill"
-                    className="absolute -bottom-1 left-1/2 -translate-x-1/2 h-1 w-4 rounded-full bg-brand-blue-deep"
+                    className="absolute -bottom-1 left-1/2 -translate-x-1/2 h-1 w-4 rounded-full bg-brand-gold"
                   />
                 )}
               </button>
@@ -60,7 +60,7 @@ export function FilterableGallery() {
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.35 }}
                 onClick={() => setLightboxIndex(idx)}
-                className={`group relative overflow-hidden rounded-3xl cursor-pointer border border-brand-gold/25 shadow-card bg-brand-blue-deep hover:shadow-2xl transition-all duration-300 ${
+                className={`group relative overflow-hidden rounded-3xl cursor-pointer border border-[#1E293B] shadow-card bg-[#121820] hover:border-brand-gold/40 hover:shadow-2xl transition-all duration-300 ${
                   item.aspectRatio === "tall"
                     ? "h-[420px]"
                     : item.aspectRatio === "wide"
@@ -78,11 +78,11 @@ export function FilterableGallery() {
                 />
 
                 {/* Dark Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-blue-deep via-brand-blue-deep/20 to-transparent opacity-85 group-hover:opacity-95 transition-opacity" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F14] via-[#0B0F14]/30 to-transparent opacity-85 group-hover:opacity-95 transition-opacity" />
 
                 {/* Category Badge Top Left */}
                 <div className="absolute top-4 left-4 z-10">
-                  <span className="inline-flex items-center gap-1 rounded-full bg-brand-blue-deep/90 px-3 py-1 text-xs font-semibold text-brand-gold border border-brand-gold/30 backdrop-blur-md">
+                  <span className="inline-flex items-center gap-1 rounded-full bg-[#0B0F14]/90 px-3 py-1 text-xs font-semibold text-brand-gold border border-brand-gold/30 backdrop-blur-md">
                     <Tag className="h-3 w-3" />
                     {item.category}
                   </span>
@@ -90,7 +90,7 @@ export function FilterableGallery() {
 
                 {/* Hover Eye Icon */}
                 <div className="absolute inset-0 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-full gold-gradient-bg text-brand-blue-deep shadow-gold transform scale-75 group-hover:scale-100 transition-transform">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-brand-gold text-[#0B0F14] shadow-gold transform scale-75 group-hover:scale-100 transition-transform">
                     <Eye className="h-7 w-7" />
                   </div>
                 </div>
@@ -104,7 +104,7 @@ export function FilterableGallery() {
                   <h3 className="font-heading text-xl font-bold text-white leading-snug">
                     {item.title}
                   </h3>
-                  <p className="mt-1 text-xs text-brand-cream/80 line-clamp-2">
+                  <p className="mt-1 text-xs text-[#E2E8F0] line-clamp-2">
                     {item.description}
                   </p>
                 </div>
