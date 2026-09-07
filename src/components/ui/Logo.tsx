@@ -40,7 +40,7 @@ export function Logo({ variant = "light", className = "", showTagline = false }:
           </span>
         </div>
         <div className="flex items-center gap-2">
-          <span className="text-[10px] font-bold tracking-widest text-[#38BDF8] uppercase">
+          <span className="text-[10px] font-bold tracking-widest text-brand-gold uppercase">
             LIMITED
           </span>
           <span className="h-1 w-1 rounded-full bg-brand-gold"></span>

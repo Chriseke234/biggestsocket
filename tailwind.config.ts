@@ -11,24 +11,24 @@ const config: Config = {
       colors: {
         brand: {
           blue: {
-            DEFAULT: "#0B0F19",
-            deep: "#06080E",
-            navy: "#111827",
-            light: "#1E293B",
-            bright: "#00D2FF",
-            sky: "#E0F2FE",
+            DEFAULT: "#121820",
+            deep: "#0B0F14",
+            navy: "#18202A",
+            light: "#243040",
+            bright: "#00E699",
+            sky: "#E6FBF4",
           },
           gold: {
-            DEFAULT: "#00D2FF",
-            light: "#38BDF8",
-            dark: "#0284C7",
-            pale: "#0F172A",
-            glow: "rgba(0, 210, 255, 0.35)",
+            DEFAULT: "#00E699",
+            light: "#33EBAD",
+            dark: "#00B377",
+            pale: "#0D221A",
+            glow: "rgba(0, 230, 153, 0.35)",
           },
           cream: {
-            DEFAULT: "#080B11",
-            light: "#0B0F19",
-            dark: "#111827",
+            DEFAULT: "#0B0F14",
+            light: "#121820",
+            dark: "#18202A",
           },
           charcoal: {
             DEFAULT: "#F8FAFC",
@@ -46,9 +46,9 @@ const config: Config = {
         "3xl": "24px",
       },
       boxShadow: {
-        soft: "0 10px 30px -5px rgba(0, 210, 255, 0.08)",
-        card: "0 14px 35px -8px rgba(0, 210, 255, 0.15)",
-        gold: "0 8px 25px -4px rgba(0, 210, 255, 0.4)",
+        soft: "0 10px 30px -5px rgba(0, 230, 153, 0.08)",
+        card: "0 14px 35px -8px rgba(0, 230, 153, 0.15)",
+        gold: "0 8px 25px -4px rgba(0, 230, 153, 0.4)",
         floating: "0 20px 40px -10px rgba(0, 0, 0, 0.7)",
       },
       animation: {
