@@ -82,7 +82,7 @@ const valueProps = [
 
 export function WhyChooseUs() {
   return (
-    <section className="relative py-24 sm:py-32 bg-gradient-to-b from-white via-brand-cream to-white overflow-hidden">
+    <section className="relative py-24 sm:py-32 bg-brand-cream overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="mx-auto max-w-3xl text-center">

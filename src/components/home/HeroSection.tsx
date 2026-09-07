@@ -20,27 +20,12 @@ export function HeroSection() {
   const [bookingModalOpen, setBookingModalOpen] = useState(false);
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-brand-blue-deep via-brand-blue to-brand-cream-light pt-12 pb-24 lg:pt-20 lg:pb-32 text-white">
+    <section className="relative overflow-hidden bg-brand-blue-deep pt-12 pb-24 lg:pt-20 lg:pb-32 text-white">
       {/* Decorative Floating Sparkle Motifs */}
       <SparkleMotif />
 
-      {/* Subtle background ambient mesh glow */}
-      <div className="pointer-events-none absolute -top-24 left-1/4 h-96 w-96 rounded-full bg-brand-gold/15 blur-[100px]" />
-      <div className="pointer-events-none absolute top-1/2 right-10 h-80 w-80 rounded-full bg-brand-blue-bright/20 blur-[120px]" />
-
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center">
-          {/* Top Pill Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: -15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 rounded-full border border-brand-gold/40 bg-brand-blue-navy/80 px-4 py-1.5 text-xs font-semibold text-brand-gold shadow-lg backdrop-blur-md"
-          >
-            <Sparkles className="h-3.5 w-3.5 text-brand-gold" />
-            <span>Nigeria&apos;s Elite Event & Luxury Lifestyle Management</span>
-          </motion.div>
-
           {/* Main Headline */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}

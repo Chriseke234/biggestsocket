@@ -17,7 +17,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* Services Hero Banner */}
-      <section className="relative bg-gradient-to-b from-brand-blue-deep via-brand-blue to-brand-cream-light py-20 lg:py-28 text-white overflow-hidden">
+      <section className="relative bg-brand-blue-deep py-20 lg:py-28 text-white overflow-hidden">
         <SparkleMotif />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 rounded-full bg-brand-gold/20 px-4 py-1.5 text-xs font-semibold text-brand-gold border border-brand-gold/30">

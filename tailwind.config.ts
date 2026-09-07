@@ -38,8 +38,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        heading: ["var(--font-heading)", "Syne", "sans-serif"],
-        sans: ["var(--font-sans)", "DM Sans", "system-ui", "sans-serif"],
+        heading: ["var(--font-heading)", "Outfit", "sans-serif"],
+        sans: ["var(--font-sans)", "Inter", "system-ui", "sans-serif"],
       },
       borderRadius: {
         "2xl": "16px",

@@ -14,7 +14,7 @@ export function CtaBand() {
   const mailtoUrl = `mailto:${companyData.email}?subject=Planning%20Inquiry%20-%20Uncle%20Skillful%20Limited`;
 
   return (
-    <section className="relative overflow-hidden py-20 lg:py-24 gold-gradient-bg text-brand-blue-deep">
+    <section className="relative overflow-hidden py-20 lg:py-24 bg-brand-gold text-brand-blue-deep">
       {/* Subtle Pattern Elements */}
       <div className="pointer-events-none absolute -top-20 -right-20 h-64 w-64 rounded-full bg-white/20 blur-2xl" />
       <div className="pointer-events-none absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-brand-blue-deep/10 blur-2xl" />
