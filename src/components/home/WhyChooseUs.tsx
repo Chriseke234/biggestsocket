@@ -1,57 +1,14 @@
 "use client";
 
-import React, { useEffect, useState, useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 import {
   Award,
   ShieldCheck,
   Zap,
   Users,
-  CheckCircle2,
   Sparkles,
 } from "lucide-react";
-import { trustStats } from "@/data/company";
-
-function Counter({
-  target,
-  suffix,
-}: {
-  target: number;
-  suffix: string;
-}) {
-  const [count, setCount] = useState(0);
-  const ref = useRef<HTMLSpanElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-50px" });
-
-  useEffect(() => {
-    if (!isInView) return;
-
-    let start = 0;
-    const duration = 2000; // ms
-    const stepTime = 20;
-    const totalSteps = duration / stepTime;
-    const increment = target / totalSteps;
-
-    const timer = setInterval(() => {
-      start += increment;
-      if (start >= target) {
-        setCount(target);
-        clearInterval(timer);
-      } else {
-        setCount(Math.floor(start));
-      }
-    }, stepTime);
-
-    return () => clearInterval(timer);
-  }, [isInView, target]);
-
-  return (
-    <span ref={ref} className="font-heading font-extrabold text-white">
-      {count}
-      {suffix}
-    </span>
-  );
-}
 
 const valueProps = [
   {
@@ -96,31 +53,6 @@ export function WhyChooseUs() {
           <p className="mt-4 text-base sm:text-lg text-[#E2E8F0]">
             We bridge the gap between creative festivity and executive rigor, delivering peace of mind on every milestone.
           </p>
-        </div>
-
-        {/* 4 Animated Counter Stats */}
-        <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-6">
-          {trustStats.map((stat, idx) => (
-            <motion.div
-              key={stat.label}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="relative overflow-hidden rounded-3xl bg-[#121820] p-6 sm:p-8 text-center shadow-card border border-[#1E293B] hover:border-brand-gold/40 transition-all"
-            >
-              <div className="absolute top-0 left-0 right-0 h-1 bg-brand-gold" />
-              <div className="text-3xl sm:text-5xl text-white">
-                <Counter target={stat.value} suffix={stat.suffix} />
-              </div>
-              <h3 className="mt-2 font-heading text-base sm:text-lg font-bold text-white">
-                {stat.label}
-              </h3>
-              <p className="mt-1 text-xs text-[#94A3B8]">
-                {stat.description}
-              </p>
-            </motion.div>
-          ))}
         </div>
 
         {/* 4 Value Pillars */}
