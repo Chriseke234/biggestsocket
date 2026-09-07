@@ -7,51 +7,52 @@
 :root {
   --font-heading: 'Outfit', sans-serif;
   --font-sans: 'Inter', system-ui, sans-serif;
-  --bg-cream: #FBF9F5;
-  --primary-blue: #111111;
-  --gold-primary: #D4AF37;
+  --bg-cream: #080B11;
+  --primary-blue: #0B0F19;
+  --gold-primary: #00D2FF;
 }
 
 html {
   scroll-behavior: smooth;
   background-color: var(--bg-cream);
-  color: #111111;
+  color: #F8FAFC;
   font-family: var(--font-sans);
 }
 
 body {
   overflow-x: hidden;
   min-height: 100vh;
-  background-color: #FBF9F5;
+  background-color: #080B11;
+  color: #F8FAFC;
 }
 
-/* Custom gold gradient styling */
+/* Electric Cyan & Chrome gradient styling */
 .gold-gradient-text {
-  background: linear-gradient(135deg, #F3C64F 0%, #D4AF37 50%, #AA8A2A 100%);
+  background: linear-gradient(135deg, #FFFFFF 0%, #38BDF8 50%, #00D2FF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gold-gradient-bg {
-  background: linear-gradient(135deg, #F3C64F 0%, #D4AF37 50%, #B89327 100%);
+  background: linear-gradient(135deg, #38BDF8 0%, #00D2FF 50%, #0284C7 100%);
 }
 
 .blue-gradient-bg {
-  background: linear-gradient(135deg, #0B2A6B 0%, #081E4D 60%, #06183D 100%);
+  background: linear-gradient(135deg, #111827 0%, #0B0F19 60%, #06080E 100%);
 }
 
 .card-gloss {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(17, 24, 39, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(212, 175, 55, 0.18);
+  border: 1px solid rgba(0, 210, 255, 0.2);
 }
 
 .dark-card-gloss {
-  background: rgba(11, 42, 107, 0.9);
+  background: rgba(11, 15, 25, 0.9);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(212, 175, 55, 0.25);
+  border: 1px solid rgba(0, 210, 255, 0.3);
 }
 
 /* Perspective utilities for 3D flip card */
