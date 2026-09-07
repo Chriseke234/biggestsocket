@@ -29,7 +29,7 @@ export function ServicesGrid() {
   const [activeServiceModal, setActiveServiceModal] = useState<string | null>(null);
 
   return (
-    <section className="relative py-24 sm:py-32 bg-brand-cream overflow-hidden">
+    <section className="relative py-24 sm:py-32 bg-[#0B0F14] overflow-hidden">
       {/* Decorative background subtle watermark */}
       <div className="pointer-events-none absolute -right-20 top-40 h-96 w-96 rounded-full bg-brand-gold/10 blur-[100px]" />
       <div className="pointer-events-none absolute -left-20 bottom-20 h-96 w-96 rounded-full bg-brand-blue/5 blur-[100px]" />
@@ -37,11 +37,7 @@ export function ServicesGrid() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center">
-          <div className="inline-flex items-center gap-2 rounded-full bg-[#18202A] px-4 py-1.5 text-xs font-bold text-brand-gold border border-brand-gold/30">
-            <Sparkles className="h-3.5 w-3.5 text-brand-gold" />
-            <span>Comprehensive Luxury Solutions</span>
-          </div>
-          <h2 className="mt-4 font-heading text-3xl font-extrabold text-white sm:text-5xl tracking-tight">
+          <h2 className="font-heading text-3xl font-extrabold text-white sm:text-5xl tracking-tight">
             Create Unforgettable Experiences
           </h2>
           <p className="mt-4 text-base sm:text-lg text-[#E2E8F0] leading-relaxed">
